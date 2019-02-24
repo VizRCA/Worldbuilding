@@ -16,7 +16,7 @@ Workshop covers the basics of:
 Some tools:
 	+ Instant meshes
 	+ Wrap 3 - free educational - good for characters, hands, faces, things that have references
-  
+
 ### Importing models
 
 + correct uv's and normals, do topology tests in modelling software.
@@ -24,15 +24,27 @@ Some tools:
 + well structured models in your modelling software will be well structured on import.
 + zero marker
 + scale testing  
-  
+
 ### Advice on breaking down complex object assemblies
 
 + Subdividing things: Hide the line!
 + Object focussed: split things up at logical divisions.
 
-## Terrain 
+## Terrain
 
 See slides
+
+1. Draw a Terrain
+2. Import a heightmap to generate a terrain
+
+### Useful links for Terrain Import/Export
+
++ Exporting your Unity terrain to Maya via Heightmap - <https://www.youtube.com/watch?v=LD0O1ic5Wx8>
++ Generating terrain from a Heightmap - <https://www.youtube.com/watch?v=VLTBYmmvLus> && <https://unity3d.college/2017/07/17/importing-real-world-terrain-unity-free-terrain-party/>
+	+ [Download](https://terrain.party/) or make a heightmap with perlin noise or something.
+	+ Check for mistakes: resize to something sensible, merge layers, convert to grayscale
+	+ Save as RAW file, non-interleaved channels, unless you want cool glitches!
+	+ Import file, setting Heightmap resolution in Unity to that of the file + 1
 
 ## Probuilder
 
@@ -63,3 +75,4 @@ Used the following free assets:
 + [GhostFreeRoamCamera](https://www.assetstore.unity3d.com/#!/content/19250?aid=1101lSqC): Free flying ghost roaming camera, in a FPS style!
 + [RTS camera](https://www.assetstore.unity3d.com/#!/content/43321?aid=1101lSqC): Best free camera asset on the Unity asset store.
 + [3rd Person Controller + Fly Mode](https://www.assetstore.unity3d.com/#!/content/28647?aid=1101lSqC): This package provides a basic setup for a 3rd person player controller. Includes scripts for the player movements, camera orbit and a Mecanim animator controller, containing basic locomotion (walk, run, sprint, aim & strafe, and also an extra fly mode).
++ [Nobiax/Yughues free materials and terrain assets](https://assetstore.unity.com/publishers/4986)
