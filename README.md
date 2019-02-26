@@ -9,7 +9,7 @@ Workshop covers the basics of:
 + Making terrain, using brushes, why its optimised, how to make your own assets for it.
 + Using probuilder, overview and play time. Highlight export potential to give idea of multi part workflow e.g. prototype, playtest, export,model, import, playtest, optimise, import, playtest ... Rinse repeat.
 + Lighting: realtime and baked. Progressive or enlighten?
-+ Optimising: LODs, GPU instancing, statics
++ Optimising: LODs, GPU instancing
 
 ## Models and meshes
 
@@ -122,7 +122,11 @@ Best place to get yourself up to speed is via Unity tutorial series on Graphics 
 
 
 
-## 
+## Optimising
+
++ LODs - Level of detail groupings, set how things get rendered based on distance, its how the trees work in the terrain. <https://docs.unity3d.com/Manual/LevelOfDetail.html>
++ GPU Instancing - if you have a lot of the same objects, you can speed stuff up by using GPU instancing. Don't use this on unique objects! <https://docs.unity3d.com/Manual/GPUInstancing.html>
++ Occlusion culling - design your worlds so that the can be rendered in stages <https://docs.unity3d.com/Manual/OcclusionCulling.html>
 
 ## Shout-outs
 
