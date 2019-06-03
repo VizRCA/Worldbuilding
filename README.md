@@ -41,30 +41,30 @@ Some tools:
 
 ### Place Terrain object
 
-+ Place a 3D Terrain object to make terrain. The default size of Terrain is quite large, 500 * 500. 
++ Place a 3D Terrain object to make terrain. The default size of Terrain is quite large, 500 * 500.
 
 ### Add a texture
 
-+ In the inspector of the Terrain object, select Paint Texture of the brush's icon . 
-+ Textures> Edit Textures> Add Texture> Select texture with Albedo Smoothness. 
++ In the inspector of the Terrain object, select Paint Texture of the brush's icon .
++ Textures> Edit Textures> Add Texture> Select texture with Albedo Smoothness.
 + Then the whole Terrain object becomes the selected texture.
 + You can select multiple textures, you can change the texture depending on the place like drawing a picture with the Paint tool.
 
 ### Make unevenness
 
-+ Choose the mountain icon Raise / Lower Terrain . 
++ Choose the mountain icon Raise / Lower Terrain .
 + The place you clicked gets excited and becomes a mountain. Hold down the shift key and dent with a click.
 
 ### Plant a tree
 
-+ Select Place Tree of tree icon . Edit Trees> Add Trees> Specify prefab of trees in Tree prefab. 
-+ After that, you can specify density in Mass Place Trees and place it in the whole Terrain object. 
++ Select Place Tree of tree icon . Edit Trees> Add Trees> Specify prefab of trees in Tree prefab.
++ After that, you can specify density in Mass Place Trees and place it in the whole Terrain object.
 + As with textures and terrain, you can add trees partly as you paint with paint tools.
 
 ### Plant the grass
 
-+ Select the clover icon Paint Details . 
-+ In Edit details> Add Grass Texture, select texture for grass flowers "GrassFrond 01 Albedo Alpha" etc in Environment Assets. 
++ Select the clover icon Paint Details .
++ In Edit details> Add Grass Texture, select texture for grass flowers "GrassFrond 01 Albedo Alpha" etc in Environment Assets.
 + After adjusting by adding color and size etc., you can plant grass as you draw with paint tool like other elements.
 
 ### Become scenery
@@ -79,6 +79,7 @@ Some tools:
 	+ Check for mistakes: resize to something sensible, merge layers, convert to grayscale
 	+ Save as RAW file, non-interleaved channels, unless you want cool glitches!
 	+ Import file, setting Heightmap resolution in Unity to that of the file + 1
++ [Mapbox Unity SDK](https://www.mapbox.com/unity/) provides a way to download maps for import to unity
 
 ## Probuilder
 
@@ -102,7 +103,7 @@ UV Editor, shape the direction of texture mapping.
 
 Created objects have colliders.
 
-## Lighting 
+## Lighting
 
 Many settings and takes a lot of time to figure out specifics related to your scenes.
 
