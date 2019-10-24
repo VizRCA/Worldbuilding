@@ -7,6 +7,7 @@ Workshop covers the basics of:
 
 + Importing models, how should they be prepared? Good example - subdivided meshes w names, reusable parts, when set to static it doesn't freak out. Bad example, the NASA moon crater.
 + Making terrain, using brushes, why its optimised, how to make your own assets for it.
++ Introducing Mapbox, a tool for level design and locative media.
 + Using probuilder, overview and play time. Highlight export potential to give idea of multi part workflow e.g. prototype, playtest, export,model, import, playtest, optimise, import, playtest ... Rinse repeat.
 + Lighting: realtime and baked. Progressive or enlighten?
 + Optimising: LODs, GPU instancing
@@ -26,7 +27,7 @@ Some tools:
 + correct uv's and normals, do topology tests in modelling software.
 + blocking out model shapes with collider's, complex mesh collider's are expensive.
 + well structured models in your modelling software will be well structured on import.
-+ zero marker
++ zero marker!
 + scale testing  
 
 ### Advice on breaking down complex object assemblies
@@ -71,6 +72,15 @@ Some tools:
 
 + Adjust variously, it will be like a landscape.
 
+### Stylized level design ideas
+
++ Use processing or similar to make a pile of generative grass shapes
+	+ grass can be approximated to a set of triangle strips.
+
+![https://outerra.blogspot.com/2012/05/procedural-grass-rendering.html](https://2.bp.blogspot.com/-RZ1b5QNHPg8/T7-qQzKVmnI/AAAAAAAAASA/TwmXCvix8zA/s320/grass-strip.png)
++ Select a series of them and process them like the grass assets in the standard assetstore
++ Bang, weird world of freaky shapes.
+
 ### Useful links for Terrain Import/Export
 
 + Exporting your Unity terrain to Maya via Heightmap - <https://www.youtube.com/watch?v=LD0O1ic5Wx8>
@@ -79,7 +89,38 @@ Some tools:
 	+ Check for mistakes: resize to something sensible, merge layers, convert to grayscale
 	+ Save as RAW file, non-interleaved channels, unless you want cool glitches!
 	+ Import file, setting Heightmap resolution in Unity to that of the file + 1
-+ [Mapbox Unity SDK](https://www.mapbox.com/unity/) provides a way to download maps for import to unity
+
+### Good examples of level design process
+
++ Hyperspeed process - https://www.youtube.com/watch?v=KCMHTG5n1Xo
++ A bit more chill - https://www.youtube.com/watch?v=IkRMMcPBFsc
++ Useful assets vid - https://www.youtube.com/watch?v=HRpD1FvXerA
+
+## Mapbox
+Mapbox provides a way to download maps for import to unity for level design and locative media like AR.
+
+Goto [Mapbox Unity SDK](https://www.mapbox.com/unity/), register account and download SDK. Follow instructions on website for integration in unity and permissions.
+
++ Open CitySimulator scene
++ Select CitySimulatorMap GameObject, hit enable preview button.
++ Replace camera with Player prefab.
++ Notice the position and scale is whacky, adjust accordingly.
++ Press play, your player falls forever, so you must add a floor collider for the whole world.
+	+ Inside CitySimulatorMap GameObject, undfold the Terrain tab
+	+ Toggle Add Collider
++ Press play, enable fly mode and away you go!
+
+### Creating a Mapbox
+
+https://docs.mapbox.com/help/tutorials/create-a-map-in-unity/
+
++ Open Mapbox custom map scene, play with changing location; depending on where you go, you may need to change zoom level.
++ Inside the Map prefab:
+	+ Set Latitude Longitude to: 36.2702, -121.8075
+	+ Set unity tile size to 1000
+	+ Set image data source to "Mapbox Satellite"
+	+ Change the image data source to Custom style: mapbox://styles/vizrca/ck1uoums9092u1cpfog62soe2
+	+ You can borrow or create your own styles using the online editor.
 
 ## Probuilder
 
